@@ -1,3 +1,6 @@
+/*
+ * @type {import('@relative-ci/cli').Config}
+ */
 module.exports = {
   payloadFilepath: './artifacts/relative-ci-agent.json',
   includeCommitMessage: true,

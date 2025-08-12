@@ -25,8 +25,8 @@ jobs:
       # Build and output webpack stats to artifacts/webpack-stats.json
       - run: npm run build
 
-      - name: Send stats to relative-ci.com
-        run: npx relative-ci-agent
+      - name: Send bundle stats and build information to relative-ci.com
+        run: npx relative-ci
         env:
           RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}
           DEBUG: ${{ secrets.DEBUG }}
